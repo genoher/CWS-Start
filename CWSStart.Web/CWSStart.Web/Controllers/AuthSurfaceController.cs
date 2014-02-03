@@ -162,8 +162,6 @@ namespace CWSStart.Web.Controllers
             }
         }
 
-
-
         //Register
         /// <summary>
         /// Renders the Register View
@@ -253,7 +251,6 @@ namespace CWSStart.Web.Controllers
             //All done - redirect back to page
             return RedirectToCurrentUmbracoPage();
         }
-
 
         //Forgotten Password
         /// <summary>
@@ -390,8 +387,6 @@ namespace CWSStart.Web.Controllers
 
             return RedirectToCurrentUmbracoPage();
         }
-
-
 
         //Verify Email
         /// <summary>

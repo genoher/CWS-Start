@@ -12,6 +12,7 @@ using Umbraco.Web.Models;
 
 namespace CWSStart.Web.Models
 {
+    // Profile View Model
     public class ProfileViewModel
     {
         [HiddenInput(DisplayValue = false)]
@@ -40,34 +41,5 @@ namespace CWSStart.Web.Models
 
         [MinLength(1, ErrorMessage = "It's unlikey your Skype username is a single letter")]
         public string Skype { get; set; }
-    }
-
-    public class ViewProfileViewModel
-    {
-
-        [HiddenInput(DisplayValue = false)]
-        public int MemberID { get; set; }
-
-        public string Name { get; set; }
-
-        [DisplayName("Email address")]
-        public string EmailAddress { get; set; }
-
-        [HiddenInput(DisplayValue = false)]
-        public string MemberType { get; set; }
-
-        public string Description { get; set; }
-
-        public string Twitter { get; set; }
-
-        public string LinkedIn { get; set; }
-
-        public string Skype { get; set; }
-
-        public DateTime LastLoginDate { get; set; }
-
-        public int NumberOfLogins { get; set; }
-
-        public int NumberOfProfileViews { get; set; }
     }
 }

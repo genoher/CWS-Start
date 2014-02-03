@@ -6,6 +6,7 @@ using System.Web;
 
 namespace CWSStart.Web.Models
 {
+    /// Contact Form View Model
     public class ContactFormViewModel
     {
         [Required]
@@ -18,6 +19,5 @@ namespace CWSStart.Web.Models
         [Required]
         [MinLength(20, ErrorMessage = "Your message is less than 20 characters. Please provide more details to your message.")]
         public string Message { get; set; }
-
     }
 }
